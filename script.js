@@ -1,3 +1,4 @@
+  
   // Slider Automático
   const slides = document.querySelector(".slides");
   let index = 0;
