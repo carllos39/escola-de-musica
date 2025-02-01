@@ -1,6 +1,11 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+
 const mudarCor = document.querySelector("h1");
+const lista=document.getElementById("lista");
+const btnCurso=document.getElementById(" btnCurso");
+
 mudarCor.addEventListener("mouseover", () => {
-  mudarCor.style.backgroundColor = "green";
+  mudarCor.style.backgroundColor = "blue";
   mudarCor.style.color = "white";
 });
 
@@ -8,11 +13,17 @@ mudarCor.addEventListener("mouseout", () => {
   mudarCor.style.backgroundColor = "";
   mudarCor.style.color = "";
 });
+btnCurso.addEventListener("click", () => {
+  lista.style.display = listaMenu.style.display === "block" ? "none" : "block";
+});
 
+
+});
 
 
 // Slider Automático
 const slides = document.querySelector(".slides");
+
 let index = 0;
 
 function mudarSlide() {
@@ -21,3 +32,4 @@ function mudarSlide() {
 }
 
 setInterval(mudarSlide, 4000);
+
