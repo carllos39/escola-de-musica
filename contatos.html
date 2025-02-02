@@ -46,13 +46,13 @@
         <label for="cep">CEP: <br><span id="status"></span></label>
         <div id="area-do-cep">
             <input placeholder="Somente números" type="text" id="cep" name="cep" maxlength="9" inputmode="numeric"
-                required> <br>
+                required><br>
             <button id="buscar">Buscar</button>
         </div>
         </div>
         <div>
             <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" size="30">
+            <input readonly type="text" id="endereco" name="endereco" size="30">
         </div>
         <div>
             <label for="bairro">Bairro:</label>
@@ -66,16 +66,19 @@
             <label for="estado">Estado:</label>
             <input readonly type="text" id="estado" name="estado">
         </div>
-        <input type="submit" value="Enviar">
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
     </form>
     <footer>
         <p>&copy; 2025 Escola de Música da Lapa - Todos os Direitos Reservados</p>
     </footer>
-      <!-- Importação da biblioteca JQuery -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <!-- Importação do plugin/extenção Jquery mask -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <!-- Importação da biblioteca JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Importação do plugin/extenção Jquery mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="js/contato.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

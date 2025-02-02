@@ -10,6 +10,7 @@ list-style: none;
 }
 a{
     text-decoration: none;
+    color:black;
 }
 .cursos {
     background: none;
@@ -26,6 +27,7 @@ a{
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    background-color: rgba(0, 162, 255, 0.151);
 }
 .cursos{
     display: none;
@@ -44,7 +46,7 @@ body{
 
 
 .slide {
-    border: 1px solid black;
+    border: 1px solid black; 
     min-width: 100%;
     height: 400px;
     width: 500px;
@@ -53,7 +55,7 @@ body{
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
-    background-color: beige;
+    background-color:rgba(0, 162, 255, 0.151) ;
 }
 img{
     width: 300px;
@@ -94,12 +96,19 @@ img{
     
 }
 .container{
-    display: grid;
-    grid-template-columns: 100px 300px 100px;
+
+ 
 }
 .texto{
-    grid-area: 1/2/2/3;
-    
+  width:600px ;
+  height:400px ;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  
+}
+.texto p{
+    color: black;
 }
 form{
     max-width: 500px;
@@ -129,6 +138,25 @@ form div *:not(label){
     width: 70%;
 }
 footer{
-    background-color: aqua;
     
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    
+}
+p{
+       display: flex;
+    justify-content: center;   
+    color: white;
+    padding: 20px;
+}
+button{
+    height: 40px;
+    width: 40px;
+    background-color:blue;
+    color: white;
+    border-radius: 4px;
+    margin-bottom:5px ;
+
 }
