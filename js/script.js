@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
 const mudarCor = document.querySelector("h1");
+const botao=document.getElementById("botao");
 const lista=document.getElementById("lista");
-const btnCurso=document.getElementById(" btnCurso");
 
 mudarCor.addEventListener("mouseover", () => {
   mudarCor.style.backgroundColor = "blue";
@@ -13,8 +13,8 @@ mudarCor.addEventListener("mouseout", () => {
   mudarCor.style.backgroundColor = "";
   mudarCor.style.color = "";
 });
-btnCurso.addEventListener("click", () => {
-  lista.style.display = listaMenu.style.display === "block" ? "none" : "block";
+botao.addEventListener("click", () => {
+  lista.style.display = lista.style.display === "block" ? "none" : "block";
 });
 
 

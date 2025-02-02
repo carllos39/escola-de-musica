@@ -19,9 +19,12 @@ a{
     font-size: 1.1rem;
     cursor: pointer;
 }
-.lista{
+#lista {
     position: absolute;
     cursor: pointer;
+    list-style: none;
+    background-color: black;
+    color: white;
     
 }
 body{
