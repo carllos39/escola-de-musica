@@ -1,17 +1,33 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 .menu {
-display: flex;
-justify-content: space-around;
-list-style: none;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    padding: 20px;
 }
-a{
+
+a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
+
+#botao {
+    background: none;
+    align-items: center;
+    padding: 10px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    background-color: none;
+    font-size: 1rem;
+}
+
 .cursos {
     background: none;
     border: none;
@@ -19,37 +35,44 @@ a{
     font-size: 1.1rem;
     cursor: pointer;
 }
+
 #lista {
-    position: absolute;
+    display: none;
+    position: relative;
     cursor: pointer;
     list-style: none;
     background-color: black;
     color: white;
-    
+    padding: 10px;
 }
-body{
+
+#lista li {
+    margin-bottom: 10px;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: rgba(0, 162, 255, 0.151);
 }
-.cursos{
+
+.cursos {
     display: none;
 }
+
 /* === Slider === */
 .slider {
-    max-width: 800px;
     margin: 20px auto;
-    position: relative;  
-    overflow: hidden;  
+    position: relative;
+    overflow: hidden;
 }
+
 .slides {
     display: flex;
     transition: transform 1s ease-in-out;
 }
 
-
 .slide {
-    border: 1px solid black; 
     min-width: 100%;
     height: 400px;
     width: 500px;
@@ -58,108 +81,114 @@ body{
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
-    background-color:rgba(0, 162, 255, 0.151) ;
+    background-color: rgba(0, 162, 255, 0.151);
 }
-img{
-    width: 300px;
-    height: 300px;
-    
+
+img {
+    width: 380px;
+    height: 380px;
+    object-fit: contain  ;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-between;
- 
+
 }
-.cards img{
+
+.cards img {
     width: 100%;
     height: 100%;
 }
-.card1{
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-   
-}
-.card2{
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    
-}
-.card3{
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    
-}
-.card4{
-    width: 250px;
-    height: 200px;
-    padding: 20px;
-    
-}
-.container{
 
- 
+.card1 {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+
 }
-.texto{
-  width:600px ;
-  height:400px ;
-  text-align: center;
-  padding: 10px;
-  margin: auto;
-  
+
+.card2 {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+
 }
-.texto p{
+
+.card3 {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+
+}
+
+.card4 {
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+
+}
+
+.texto {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+
+}
+
+.texto p {
     color: black;
 }
-form{
+
+form {
     max-width: 500px;
-    margin:auto;
+    margin: auto;
 }
 
-input{
+input {
     padding: 4px;
     height: 40px;
     border-radius: 4px;
 }
 
-form div{
+form div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1rem;
 }
 
-label{
+label {
     font-size: 0.9rem;
     font-weight: bold;
     width: 30%;
 }
 
-form div *:not(label){
+form div *:not(label) {
     width: 70%;
 }
-footer{
-    
-    height: 60px;
+
+footer {
+    width: 100%;
     display: flex;
     justify-content: center;
     background-color: blue;
-    
-}
-p{
-       display: flex;
-    justify-content: center;   
+    position: absolute;
+    bottom: 0;
+}   
+
+p {
+    display: flex;
+    justify-content: center;
     color: white;
     padding: 20px;
 }
-button{
-    height: 40px;
-    width: 40px;
-    background-color:blue;
+
+.btn {
+    padding: 10px;
+    background-color: blue;
     color: white;
     border-radius: 4px;
-    margin-bottom:5px ;
-
 }
